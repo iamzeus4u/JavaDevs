@@ -224,7 +224,7 @@ public class devListActivity extends AppCompatActivity {
         protected Void doInBackground(Void... voids) {
             HttpHandler sh = new HttpHandler();
             // Making a request to url and getting response
-            String url = "https://api.github.com/search/users?q=+location:Lagos+language:java";//?access_token=0a1bec29480cc0709e0e2e8f6fe4e9432b6c8338&per_page=100";
+            String url = "https://api.github.com/search/users?q=+location:Lagos+language:java";
             String jsonStr = sh.makeServiceCall(url);
 
             Log.e(TAG, "Response from url: " + jsonStr);
